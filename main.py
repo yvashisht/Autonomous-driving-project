@@ -23,7 +23,7 @@ class Car(pygame.sprite.Sprite):
         self.original_image = pygame.image.load(os.path.join("Assets", "car.png"))
         self.image = self.original_image
         self.rect = self.image.get_rect(center=(490, 820))
-        self.drive_state = False
+        # self.drive_state = False
         self.vel_vector = pygame.math.Vector2(0.8, 0)
         self.angle = 0
         self.rotation_vel = 5
@@ -39,8 +39,8 @@ class Car(pygame.sprite.Sprite):
         self.collision()
 
     def drive(self):
-        if self.drive_state:
-            self.rect.center += self.vel_vector * 6
+        # if self.drive_state:
+        self.rect.center += self.vel_vector * 6
     
     def collision(self):
         length = 40
@@ -85,8 +85,7 @@ class Car(pygame.sprite.Sprite):
             pygame.draw.line(screen, (255, 255, 255), self.rect.center, (x, y), 1)
             pygame.draw.circle(screen, (0, 255, 0), (x, y), 3)
 
-
-car = pygame.sprite.GroupSingle(Car())
+# car = pygame.sprite.GroupSingle(Car())
 
 # Main execution block
 clock = pygame.time.Clock()
@@ -102,16 +101,16 @@ def eval_genomes():
         screen.blit(track, (0, 0))
 
         # User input
-        user_input = pygame.key.get_pressed()
-        if sum(user_input) <= 1:
-            car.sprite.drive_state = False
-            car.sprite.direction = 0
-        if user_input[pygame.K_UP]:
-            car.sprite.drive_state = True
-        if user_input[pygame.K_RIGHT]:
-            car.sprite.direction = 1
-        if user_input[pygame.K_LEFT]:
-            car.sprite.direction = -1
+        # user_input = pygame.key.get_pressed()
+        # if sum(user_input) <= 1:
+        #     car.sprite.drive_state = False
+        #     car.sprite.direction = 0
+        # if user_input[pygame.K_UP]:
+        #     car.sprite.drive_state = True
+        # if user_input[pygame.K_RIGHT]:
+        #     car.sprite.direction = 1
+        # if user_input[pygame.K_LEFT]:
+        #     car.sprite.direction = -1
 
         # Update
         car.draw(screen)
@@ -121,4 +120,4 @@ def eval_genomes():
         pygame.display.update()
         clock.tick(60)
 
-eval_genomes()
+# eval_genomes()
