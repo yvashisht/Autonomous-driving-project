@@ -99,6 +99,14 @@ Clone this repository to your local machine and run the simulation to see the ca
 
 ---
 
+## Final Product 📸
+
+This is a demo of my final product:
+
+![Final Product Demo](assets/Final%20Product%20Demo.gif)
+
+Feel free to explore the project and check out the functionality!
+
 ## Acknowledgements 🙏
 
 This project is inspired by the **[YouTube tutorial](https://www.youtube.com/watch?v=JNAtyw_NENo)** on building a self-driving car with NEAT and Pygame. Special thanks to the tutorial creator for the guidance and inspiration.
