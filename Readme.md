@@ -103,7 +103,7 @@ Clone this repository to your local machine and run the simulation to see the ca
 
 This is a demo of my final product:
 
-![Final Product Demo](assets/Final%20Product%20Demo.gif)
+![Final Product Demo](assets/FinalProductDemo.gif)
 
 Feel free to explore the project and check out the functionality!
 
